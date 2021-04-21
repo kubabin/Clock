@@ -1,0 +1,43 @@
+.wall {
+    background-image: url('wall.png');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+
+}
+.clock
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid black;
+    margin: 30px auto;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.04);
+    position: relative;
+}
+.hand {
+    top: 3px;
+    right: 50%;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.02);
+    position: absolute;
+    transform-origin: bottom center;
+}
+.hand.minutes,
+.hand.seconds {
+    height: calc(50% - 3px);
+    background-color: black;
+}
+.hand.seconds {
+    width: 1px;
+}
+.hand.minutes {
+    width: 3px;
+}
+.hand.hours {
+    top: 20%;
+    width: 4px;
+    height: 30%;
+    background-color: red;
+}
